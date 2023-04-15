@@ -88,8 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // GROUPING THE PORTFOLIO-SPECIFIC ITEMS
         const portfolioGroup = new THREE.Group();
-        portfolioGroup.position.set(0, 0.6, 0.3);
-        portfolioGroup.rotation.set(Math.PI/2, 0, 0);
+        portfolioGroup.position.set(0, 0.6, -0.01);
         
         portfolioGroup.add(portfolioItem0);
         portfolioGroup.add(leftIcon);
