@@ -88,7 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // GROUPING THE PORTFOLIO-SPECIFIC ITEMS
         const portfolioGroup = new THREE.Group();
-        portfolioGroup.position.set(0, 0.6, -0.01);
+        portfolioGroup.position.set(0, 0.6, 0.3);
+        portfolioGroup.rotation.set(Math.PI/2, 0, 0);
         
         portfolioGroup.add(portfolioItem0);
         portfolioGroup.add(leftIcon);
@@ -240,7 +241,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             [webIcon, emailIcon, locationIcon, profileIcon].forEach(icon => {
                 icon.scale.set(iconScale, iconScale, iconScale);
-                icon.rotation.set(0, icon.rotation.y + delta, 0);
             });
 
             const avatarZ = Math.min(0.3, -0.3 + elapsed * 0.5);
