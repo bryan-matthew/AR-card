@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Animals model
         const animals = await loadGLTF('../assets/animals/scene.gltf');
         animals.scene.scale.set(0.3, 0.3, 0.3);
-        animals.scene.position.set(-1, -0.1, 0.5);
+        animals.scene.position.set(0, -0.1, 0.6);
         cardAnchor.group.add(animals.scene);
 
         // Animation
